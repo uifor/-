@@ -1,0 +1,56 @@
+.main{
+  margin: 0 auto;
+  width: 92%;
+  overflow: hidden;
+  margin-top: 10rpx;
+}
+.header{
+  display: flex;
+  font-size: 30px;
+  margin-bottom: 45rpx;
+  justify-content: space-between;
+}
+.logo{
+  width: 95rpx;
+  height: 95rpx;
+  border-radius: 50%;
+}
+.user{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+}
+.content-headlogo{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+}
+.content-title{
+  display: flex;
+  justify-content: space-between;
+}
+.ellipsis{
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 23rpx;
+}
+.content-tag{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  align-content: space-between;
+  color: #545454;
+}
+.time{
+  color: #d1d2d1;
+  font-size: 12px;
+}
+.tar image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 30rpx;
+}
+.content-tit{
+  font-size: 13px;
+  color: #585858;
+}
