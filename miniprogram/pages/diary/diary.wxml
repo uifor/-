@@ -1,0 +1,125 @@
+<view class='diary'>
+  <view class='diary_head'>
+    <view><image src='../../images/diary.png'></image></view>
+    <view style='margin-top:20rpx;'><text>更新日记</text></view>
+  </view>
+  <view class='diary_list'>
+    <view class='diary_content'>
+      <text class='diary_title'>v2.0.5</text>
+      <text>
+      修复标题多行显示bug
+      修复图片加载变形问题
+      首页图片加载方式改为懒加载方式
+      </text>
+    </view>
+  </view>
+  <view class='diary_list'>
+    <view class='diary_content'>
+      <text class='diary_title'>v2.0.3</text>
+      <text>
+      修改: 修复若干BUg
+      </text>
+    </view>
+  </view>
+  <view class='diary_list'>
+    <view class='diary_content'>
+      <text class='diary_title'>v2.0.2</text>
+      <text>
+      新增：完善文章海报功能(实现动态生成小程序码)
+      修改: 文章更多开关过渡动画
+      </text>
+    </view>
+  </view>
+  <view class='diary_list'>
+    <view class='diary_content'>
+      <text class='diary_title'>v2.0.1</text>
+      <text>
+      新增：文章海报功能，专题过渡动画，加载数据错误提醒
+      修改: 修复首页加载数据BUG，部分页面UI微调
+      </text>
+    </view>
+  </view>
+  <view class='diary_list'>
+    <view class='diary_content'>
+      <text class='diary_title'>v2.0.0</text>
+      <text>
+      新增：我的页面更新日记，清除数据,专题页面
+      修改: 整体UI的细微优化与调整,压缩icon,css
+      </text>
+    </view>
+  </view>
+  <view class='diary_list'>
+    <view class='diary_content'>
+      <text class='diary_title'>v1.1.0</text>
+      <text>
+      新增：全新加载数据动画，评论动画
+      修改: 首页排版调整，加载数据逻辑调整
+      </text>
+    </view>
+  </view>
+  <view class='diary_list'>
+    <view class='diary_content'>
+      <text class='diary_title'>v1.0.8</text>
+      <text>
+      新增：管理员删除评论
+      修改: 优化icon,优化代码逻辑，修复分享页面数据为空
+      </text>
+    </view>
+  </view>
+  <view class='diary_list'>
+    <view class='diary_content'>
+      <text class='diary_title'>v1.0.6</text>
+      <text>
+      新增：分享文章，收藏文章，最近浏览文章
+      修改: 全新我的页面，有最新浏览，我的收藏，功能反馈，关于墨客栈
+      </text>
+    </view>
+  </view>
+  <view class='diary_list'>
+    <view class='diary_content'>
+      <text class='diary_title'>v1.0.5</text>
+      <text>
+      新增：文章评论功能，列表文章评论数量统计
+      修改：进入文章页弹出获取用户授权
+      说明：云开发实现评论功能
+      </text>
+    </view>
+  </view>
+  <view class='diary_list'>
+    <view class='diary_content'>
+      <text class='diary_title'>v1.0.3</text>
+      <text>
+      新增：导航栏搜索文章功能
+      修改：修复BUG若干，全新导航栏icon
+      </text>
+    </view>
+  </view>
+  <view class='diary_list'>
+    <view class='diary_content'>
+      <text class='diary_title'>v1.0.2</text>
+      <text>
+      新增：文章浏览记录统计，爱心点赞
+      修改：全新文章列表页面，优化UI
+      说明：用云开发实现浏览统计，爱心点赞功能
+      </text>
+    </view>
+  </view>
+  <view class='diary_list'>
+    <view class='diary_content'>
+      <text class='diary_title'>v1.0.1</text>
+      <text>
+      新增：文章发布时间显示
+      修改：去除文章列表作者logo，爱心图标，评论图标
+      </text>
+    </view>
+  </view>
+  <view class='diary_list'>
+    <view class='diary_content'>
+      <text class='diary_title'>v1.0.0</text>
+      <text>
+      主体功能完成
+      功能：获取文章列表，文章内容，Hi小彩蛋，Logo动画效果
+      </text>
+    </view>
+  </view>
+</view>

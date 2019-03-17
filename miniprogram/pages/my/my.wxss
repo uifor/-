@@ -1,0 +1,79 @@
+
+/**index.wxss**/
+page{
+  background-color: #f8f8f8;
+}
+.menu-list{
+  width: 96%;
+  margin: 0 auto;
+  border-radius: 15rpx;
+  padding-bottom: 20rpx;
+  overflow: hidden;
+  background-color: #fff;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 725rpx;
+  padding: 15rpx 0 15rpx 0;
+}
+
+.userinfo-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 10rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #888888;
+  font-size: 30rpx;
+  margin: 0 0 10rpx 0;
+}
+
+.btn {
+  line-height: 120%;
+  background-color: #fff;
+  text-align: left;
+  margin-left: 0px;
+  padding-left: 0px;
+  font-size: 14px;
+}
+
+.btn::after {
+  border: none;
+}
+.card{
+  width: 96%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  border-radius: 15rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  background-color: #fff;
+}
+.card-title,.card-content,.card-info{
+  margin-left: 30rpx;
+}
+.card-title{
+  font-size: 11px;
+}
+.card-content{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  color: #e64340;
+}
+.card-content image{
+  margin-right: 30rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.card-info{
+  font-size: 11px;
+  color: #8c8c8c;
+}

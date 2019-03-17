@@ -1,0 +1,150 @@
+<import src="../../templates/login.wxml" />
+<import src="../../templates/loadmore/index.wxml" />
+<import src="../../templates/poster.wxml" />
+<view class='abody'>
+  <view class='aheader'>
+    <view class='logo-m logo'>M</view>
+    <view class='logo-o logo'>o</view>
+    <view class='logo-k logo'>k</view>
+    <view class='logo-e logo'>e</view>
+    <view class='search'>
+      <navigator url="/pages/search/search">
+        <image src='../../images/search.png'></image>
+      </navigator>
+    </view>
+  </view>
+  <view class='amain'>
+    <view class='articlecontent' bindtap='openmenu_1' style="display:{{showdata?'':'none'}}">
+      <text class='articletitle'>{{articledata[0].title.rendered}}</text>
+      <view class='message'>
+        <view class='mperson'>
+          <image src='../../images/person.png'></image>
+          <text>moke</text>
+        </view>
+        <view class='mtime'>
+          <image src='../../images/time.png'></image>
+          <text>{{articledata[0].time}}</text>
+        </view>
+        <view class='mview'>
+          <image src='../../images/view.png'></image>
+          <text>{{articledata[0].view_count}}</text>
+        </view>
+        <view class='mcomments'>
+          <image src='../../images/comments.png'></image>
+          <text>{{articledata[0].comment_count}}</text>
+        </view>
+        <view class='mlike'>
+          <image src='../../images/like.png'></image>
+          <text>{{articledata[0].like_count}}</text>
+        </view>
+      </view>
+      <view class='htmlcontent'>
+        <rich-text nodes="{{articledata[0].content.rendered}}"></rich-text>
+      </view>
+    <view class='clist'>
+      <view class='clist-title'>
+        <text>评论交流({{articledata[0].comment_count}})</text>
+      </view>
+      <block wx:key="id" wx:for="{{comments}}">
+        <view class='clist-data' id="{{item._id}}">
+          <view class='clist-data-1'>
+            <view class='clist-head'><image src='{{item.cAvatarUrl}}'></image></view>
+            <view class='clist-name'>
+              <view><text>{{item.cNickName}}</text></view>
+              <view class='clist-time'>{{item.createDate}}<text></text></view>
+            </view>
+            <view class='clist-image'>
+              <image src='../../images/delete.png' data-id="{{item._id}}" data-name="{{item.cNickName}}" bindtap='delComment'></image><image src='../../images/reply.png' data-id="{{item._id}}" data-name="{{item.cNickName}}" data-openid="{{item._openid}}" bindtap="focusComment"></image>
+            </view>
+          </view>
+          <view class='clist-data-2' data-id="{{item._id}}" data-name="{{item.cNickName}}" data-openid="{{item._openid}}" bindtap="focusComment">
+            <text>{{item.comment}}</text>
+            <block wx:key="id" wx:for="{{item.childComment}}" wx:for-item="childItem">
+              <view style='margin-top:20rpx;'>
+                <view style='display:flex;flex-wrap: nowrap;align-items: center;'>
+                  <view class='clist-head'><image src='{{childItem.cAvatarUrl}}'></image></view>
+                  <view><text>{{childItem.cNickName}}回复{{childItem.tNickName}}</text></view>
+                </view>
+                <view style='margin-left:75rpx;'>
+                  <text>{{childItem.comment}}</text>
+                </view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </block>
+      <template is="zan-loadmore" data="{{ loading }}" />
+      <template is="zan-loadmore" data="{{ nodata,nodata_str }}" />
+      <template is="zan-loadmore" data="{{ nomore }}" style="margin-top:15rpx;"/>
+    </view>
+  </view>
+</view>
+  <form catchsubmit="formSubmit" report-submit="true">
+  <view class='articlemenu'>
+    <view class='menu-side1'>
+      <view class='home-open'>
+        <navigator open-type='switchTab' url="/pages/index/index">
+          <image src='../../images/home-close.png'></image>
+        </navigator>
+      </view>
+      <view>
+        <input type='text' confirm-type="send" cursor-spacing="10" maxlength="100" name="inputComment" value="{{commentContent}}" placeholder="{{placeholder}}" focus="{{focus}}" bindblur="onReplyBlur" bindfocus="onRepleyFocus" bindconfirm="formSubmit"></input>
+      </view>
+      <view>
+        <button size='mini' class='{{messagebtn}}' formType="submit">发送</button>
+      </view>
+      <view class='sign'>
+        <image src='../../images/sign.png' bindtap='openmenu'></image>
+      </view>
+    </view>
+  <view class="menu-side2' {{isShow ? 'emoji-move-in' : 'emoji-move-out'}} {{isLoad ? 'no-emoji-move' : ''}}">
+    <view class='icon'>
+      <view>
+        <button open-type="share">
+        <image src='../../images/forwarding.png'></image>
+        </button>
+      </view>
+      <view><text>转发</text></view>
+    </view>
+    <view class='icon' bindtap='posters'>
+      <view>
+      <image src='../../images/friend.png'></image>
+      </view>
+      <view><text>海报</text></view>
+    </view>
+    <view class='icon' catchtap="collection">
+      <view>
+      <image src="../../images/{{collected?'collectiond.png':'collection.png'}}"></image>
+      </view>
+      <view><text>收藏</text></view>
+    </view>
+    <view class='icon' catchtap="clickLike">
+      <view>
+      <image src="../../images/{{liked?'loved.png':'love.png'}}"></image>
+      </view>
+      <view><text>喜欢</text></view>
+    </view>
+    <view class='icon'  bindtap='appreciates'>
+      <view>
+      <image src='../../images/money.png'></image>
+      </view>
+      <view><text>赞赏</text></view>
+    </view>
+  </view>
+  </view>
+  </form>
+</view>
+<view class='loaddata {{closeload}}'>
+  <view class="sk-three-bounce">
+    <view class="sk-child sk-bounce1"></view>
+    <view class="sk-child sk-bounce2"></view>
+    <view class="sk-child sk-bounce3"></view>
+  </view>
+</view>
+<!--弹出层：授权-->
+<template is="login" data="{{showPopup: showPopup, canIUse: canIUse}}"></template>
+<!--生成海报-->
+<view class="canvas-box">
+  <canvas style="width: 600px;height: 800px;" canvas-id="mycanvas" />
+</view>
+<template is="poster" data="{{showPosterPopup: showPosterPopup,showPosterImage:showPosterImage}}"></template>

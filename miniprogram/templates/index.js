@@ -1,0 +1,1 @@
+exports.Dialog = require('./dialog/index');

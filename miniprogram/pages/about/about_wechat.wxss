@@ -1,0 +1,38 @@
+/* pages/about/about_wechat.wxss */
+.about{
+  width: 92%;
+  font-size: 28rpx;
+  padding-top: 50rpx;
+  margin: 0 auto;
+}
+.about_head{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 30rpx;
+}
+.about_head image{
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+}
+.about_title{
+  color: black;
+  margin-bottom: 5rpx;
+}
+.about_list{
+  margin-bottom: 30rpx;
+}
+.about_content{
+  color: #8c8c8c;
+}
+.about_foot{
+  position: fixed;
+  bottom: 50rpx;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  color: #8c8c8c;
+  font-size: 28rpx;
+}

@@ -1,0 +1,45 @@
+{ 
+  "cloud": true,
+  "pages":[
+    "pages/index/index",
+    "pages/project/project",
+    "pages/my/my",
+    "pages/single/single",
+    "pages/search/search",
+    "pages/collected/collected",
+    "pages/diary/diary",
+    "pages/about/about_wechat"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "墨客",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#959595",
+    "selectedColor": "#0e0e0e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/home-open.png",
+        "iconPath": "images/home-close.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/project.png",
+        "iconPath": "images/project-close.png",
+        "pagePath": "pages/project/project",
+        "text": "专题"
+      },
+      {
+        "selectedIconPath": "images/my-open.png",
+        "iconPath": "images/my-close.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  }
+}

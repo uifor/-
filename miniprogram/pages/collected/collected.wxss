@@ -1,0 +1,46 @@
+page{
+  background-color: #f8f8f8;
+}
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 86%;
+  background-color: #fff;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10rpx;
+  padding: 2%;
+  animation: listdownup 350ms ease;
+  border-radius: 15rpx;
+  margin-bottom: 10rpx;
+}
+@keyframes listdownup{
+  0%{
+    transform: translateY(-50rpx)
+  }
+  50%{
+    transform: translateY(50rpx)
+  }
+  100%{
+    transform: translateY(0)
+  }
+}
+.listimage{
+  width: 100%;
+}
+.listimage image{
+  width: 100%;
+}
+.list_title{
+  width: 100%;
+  font-size: 30rpx;
+  color: black;
+  margin-bottom: 10rpx;
+}
+.list_date{
+  color:#8c8c8c;
+  margin-left: 23rpx;
+  font-size: 25rpx;
+}
+
+

@@ -1,0 +1,64 @@
+<view class='body'>
+  <view class='header'>
+    <view class="{{highplay?'logo-m':'high-m'}} logo">M</view>
+    <view class="{{highplay?'logo-o':'high-o'}} logo">o</view>
+    <view class="{{highplay?'logo-k':'high-k'}} logo">k</view>
+    <view class="{{highplay?'logo-e':'high-e'}} logo">e</view>
+    <view class='search'>
+      <navigator url="/pages/search/search">
+        <image src='../../images/search.png'></image>
+      </navigator>
+    </view>
+  </view>
+  <view class='main'>
+    <scroll-view scroll-y>
+      <block wx:for-items="{{mokedata}}" wx:key="{{item.id}}" wx:for-index="index" class='listflex'>
+      <view class="{{highplay?listmove:'listhigh'}}" id="{{item.id}}" catchtap="redictSingle">
+      <view class='bannerinfo'>
+        <image src="{{item.image?item.image:defaultimg}}" lazy-load mode='widthFix' class="{{highplay?'':'bannerhigh'}} banner"></image>
+        <view class="{{highplay?'':'titlehigh'}} iconinfo">
+          <view class='mview'>
+            <image src='../../images/view_index.png'></image>
+            <text>{{item.view_count}}</text>
+          </view>
+          <view class='mcomments'>
+            <image src='../../images/comments_index.png'></image>
+            <text>{{item.comment_count}}</text>
+          </view>
+          <view class='mlike'>
+            <image src='../../images/like_index.png'></image>
+            <text>{{item.like_count}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="{{highplay?'':'titlehigh'}} content-tit">
+        <text>{{item.title.rendered}}</text>
+      </view>
+      <view class="{{highplay?'':'titlehigh'}} message">
+        <view class='mperson'>
+          <image src='../../images/person.png'></image>
+          <text>moke</text>
+        </view>
+        <view class='mtime'>
+          <image src='../../images/time.png'></image>
+          <text>{{item.time}}</text>
+        </view>
+      </view>
+      </view>
+      </block>
+      <view class='clear'></view>
+      <view class='{{footer}} foot'><text>- 我是有底线的 -</text></view>
+      <view class='error {{errorswitch}}'><image src='../../images/error.png' mode='widthFix'></image></view>
+    </scroll-view>
+  </view>
+</view>
+<view>  
+  <image src="../../images/{{highplay?'high.png':'high-pause.png'}}" class="img-style" animation="{{animCollect}}" bindtap="collect"></image>   
+</view>
+<view class='loaddata {{closeload}}'>
+  <view class="sk-three-bounce">
+    <view class="sk-child sk-bounce1"></view>
+    <view class="sk-child sk-bounce2"></view>
+    <view class="sk-child sk-bounce3"></view>
+  </view>
+</view>

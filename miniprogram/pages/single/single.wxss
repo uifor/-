@@ -1,0 +1,267 @@
+page{
+  background-color: #f8f8f8;
+}
+.abody{
+  width: 100%;
+  height:100%;
+  background-color: #f8f8f8;
+}
+.amain{
+  display: flex;
+  justify-content: center;
+}
+.aheader{
+  display: flex;
+  font-size: 28px;
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+  font-family: 'Chunkfive Ex';
+  margin-bottom: 15rpx; 
+  justify-content:center;
+  align-content: center;
+  background-color: #fff;
+}
+.articlecontent{
+  background-color: #fff;
+  overflow: hidden;
+  padding: 20rpx;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.articletitle{  
+  color: #231815;
+  border-left: 3px solid #231815;
+  border-left-width: 80%;
+  padding-left: 15rpx;
+}
+.htmlcontent{
+  margin-top: 15rpx;
+  padding-left: 15rpx;
+  padding-bottom: 20rpx;
+  margin-bottom: 10rpx;
+  color: #707070;
+  font-size: 14px;
+}
+/*评论菜单*/
+.articlemenu{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: rgba(211, 207, 207, 0.815) 0 -2px 2px;
+}
+.menu-side1{
+  width: 100%;
+  display: flex;
+  height: 100rpx;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.home-open image{
+  width: 70rpx;
+  height: 70rpx;
+  padding-left: 25rpx;
+  padding-right: 10rpx;
+}
+.sign image{
+  width: 67rpx;
+  height: 67rpx;
+  padding-right: 25rpx;
+}
+.sign{
+  margin-left: auto;
+}
+.menu-side1 button{
+  font-size: 11.5px;
+  border: none;
+}
+.messagebtn{
+  background-color: #f0f4f6;
+  color:#57606f;
+}
+.messagebtnout{
+  background-color: #1e90ff;
+  color: #fff;
+}
+.menu-side1 input{
+  background-color: #f0f4f6;
+  border-radius:13rpx;
+  margin-right: 10rpx; 
+  font-size: 12.5px;
+  height: 55rpx;
+  width: 380rpx;
+  padding: 5rpx 15rpx 5rpx 15rpx;
+}
+.menu-side2{
+  width: 92%;
+  display: flex;
+  height: 130rpx;
+  font-size: 11px;
+  flex-wrap: nowrap;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+  border-top: 1px solid #e6e6e6;
+  align-items: center;
+  text-align: center;
+  color: #707070;
+  margin-bottom: -170rpx;
+  justify-content: space-between
+}
+.icon{
+  flex: 1;
+}
+.menu-side2 image{
+  width: 65rpx;
+  height: 65rpx;
+}
+.menu-side2 button{
+  background: none;
+  height: 75rpx;
+}
+.menu-side2 button::after{border:none}
+.emoji-move-in {
+  -webkit-animation: emoji-move-in 0.3s forwards;
+  animation: emoji-move-in 0.3s forwards;
+}
+
+.emoji-move-out {
+  -webkit-animation: emoji-move-out 0.3s forwards;
+  animation: emoji-move-out 0.3s forwards;
+}
+
+.no-emoji-move {
+  -webkit-animation: none;
+  animation: none;
+}
+
+@-webkit-keyframes emoji-move-in {
+  0% {
+    margin-bottom: -170rpx;
+  }
+
+  100% {
+    margin-bottom: 0;
+  }
+}
+
+@keyframes emoji-move-in {
+  0% {
+    margin-bottom: -170rpx;
+  }
+
+  100% {
+    margin-bottom: 0;
+  }
+}
+
+@-webkit-keyframes emoji-move-out {
+  0% {
+    margin-bottom: 0;
+  }
+
+  100% {
+    margin-bottom: -170rpx;
+  }
+}
+
+@keyframes emoji-move-out {
+  0% {
+    margin-bottom: 0;
+  }
+
+  100% {
+    margin-bottom: -170rpx;
+  }
+}
+/*菜单end*/
+.clist{
+  font-size: 12px;
+  width: 100%;
+  margin-bottom: 200rpx; 
+  color: #707070;
+}
+.clist-title{
+  font-size: 13px;
+  margin-left: 5rpx;
+  margin-bottom: 30rpx;
+  color: #231815;
+}
+.clist-data{
+  background-color: #f8f8f8;
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+  padding: 10rpx;
+  border-radius: 15rpx;
+}
+.clist-head image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+}
+.clist-data-1{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.clist-time{
+  font-size: 10px;
+  color: #b2bec3;
+  margin-right: 10rpx;
+}
+.clist-name{
+  display: flex;
+  flex-direction: column;
+}
+.clist-image{
+  margin-left: auto;
+  margin-right: 10rpx;
+}
+.clist-image image{
+  width: 35rpx;
+  height: 35rpx;
+}
+.clist-image image:nth-child(1){
+  margin-right: 35rpx;
+}
+.clist-image image:nth-child(2){
+  margin-right: 5rpx;
+}
+.clist-foot{
+  text-align: center;
+}
+.clist-data-2{
+  padding-left: 75rpx;
+}
+
+/*作者-时间start*/
+.message{
+  display: flex;
+  color: #a2acad;
+  font-size: 11px;
+  line-height: 30rpx;
+  flex-wrap: nowrap;
+  margin-left: 15rpx;
+  margin-top: 20rpx;
+}
+.mperson image,.mtime image,.mview image,.mlike image,.mcomments image{
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 8rpx;
+}
+.mperson,.mtime,.mview,.mlike,.mcomments{
+  margin-right: 20rpx;
+  display: flex;
+  align-content: center;
+}
+/*作者-时间end*/
+
+/*   end menu-box  */
+.canvas-box {
+  position: fixed;
+  top: 999999rpx;
+  left: 0;
+}

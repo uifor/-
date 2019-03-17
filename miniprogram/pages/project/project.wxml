@@ -1,0 +1,21 @@
+<view class='head {{close}}'>
+  <view class='head-img'>
+    <image src='{{onedata.imgUrl}}' mode='widthFix'></image>
+  </view>
+  <view class='head-title'><text>{{onedata.content}}</text></view>
+  <view class='head-info'>
+    <text>复杂世界里,一个就够了.One is all.</text>
+    <view class='head-date'>
+      <text>
+        更新时间：{{onedata.time}}
+      </text>
+    </view>
+  </view>
+</view>
+<view class='loaddata {{closeload}}'>
+  <view class="sk-three-bounce">
+    <view class="sk-child sk-bounce1"></view>
+    <view class="sk-child sk-bounce2"></view>
+    <view class="sk-child sk-bounce3"></view>
+  </view>
+</view>

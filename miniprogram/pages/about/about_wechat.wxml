@@ -1,0 +1,33 @@
+<view class='about'>
+  <view class='about_head'>
+    <view><image src='../../images/logo.png'></image></view>
+    <view style='margin-top:20rpx;'><text>「墨客栈」</text></view>
+  </view>
+  <view class='about_list'>
+    <view class='about_content'>
+      <text class='about_title'>关于这里:</text>
+      <text>
+      只是学习过程中的一个寄托，一个港湾，一个承载学习过程的地方。与需要的人分享，与一起奋斗的人共勉。
+      </text>
+    </view>
+  </view>
+  <view class='about_list'>
+    <view class='about_content'>
+      <text class='about_title'>数据来源:</text>
+      <text>
+      amoke.top：博客文章数据、One一个
+      腾讯云开发：浏览次数、点赞、评论数据
+      </text>
+    </view>
+  </view>
+  <view class='about_list'>
+    <view class='about_content'>
+      <text>
+      目前墨客栈的功能正在逐渐增加中，可能会有影响使用的BUG，如果你在使用中有任何问题，请点击「功能反馈」或邮箱联系uifor@qq.com。
+      </text>
+    </view>
+  </view>
+</view>
+<view class='about_foot'><text>@2018 墨客栈</text></view>
+
+

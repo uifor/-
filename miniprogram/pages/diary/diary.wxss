@@ -1,0 +1,27 @@
+.diary{
+  width: 92%;
+  font-size: 28rpx;
+  padding-top: 50rpx;
+  margin: 0 auto;
+}
+.diary_head{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 30rpx;
+}
+.diary_head image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.diary_title{
+  color: black;
+  margin-bottom: 5rpx;
+}
+.diary_list{
+  margin-bottom: 30rpx;
+}
+.diary_content{
+  color: #8c8c8c;
+}

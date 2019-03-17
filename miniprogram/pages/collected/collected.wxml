@@ -1,0 +1,14 @@
+<import src="../../templates/loadmore/index.wxml" />
+<import src="../../templates/dialog/index.wxml" />
+<view class='body' style='padding-top:10rpx;'> 
+    <block wx:for="{{posts}}" wx:key="idx" wx:for-index="idx" data-data="{{item}}">
+      <view bindtap="bindItemTap" class='list' id="{{item.id}}">
+      <view class='list_title'><text>{{idx+1}}.{{item.title}}</text></view>
+      <view class='list_date'><text>{{showName}}{{item.created_at}}</text></view>
+      </view>
+    </block>
+    <template is="zan-loadmore" data="{{ loading }}" />
+    <template is="zan-loadmore" data="{{ nodata }}" />
+    <template is="zan-loadmore" data="{{ nomore }}" />
+</view>
+<template is="zan-dialog" data="{{ zanDialog }}"></template>

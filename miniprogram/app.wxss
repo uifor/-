@@ -1,0 +1,214 @@
+/**app.wxss**/
+@import "font/moke.wxss";
+@import "templates/index.wxss";
+.body{
+  width: 100%;
+  height:100%;
+  background-color: #f8f8f8;
+}
+.search{
+  position: absolute;
+  right: 5%;
+  top: 2%;
+  justify-content:center;
+  align-content: center;
+  display: flex;
+}
+.search image{
+  width: 65rpx;
+  height: 65rpx;
+}
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+}
+.header{
+  display: flex;
+  font-size: 28px;
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+  font-family: 'Chunkfive Ex';
+  margin-bottom: 15rpx; 
+  justify-content:center;
+  align-content: center;
+  background-color: #fff;
+}
+.logo{
+  margin-left: 5rpx;
+}
+.logo-m{
+  color: #4285f4;
+  animation: logo-m 300ms linear;
+  animation-delay:100ms;
+}
+.logo-o{
+  color: #ea4335;
+  animation: logo-o 300ms linear;
+  animation-delay:390ms;
+}
+.logo-k{
+  color: #fbbc05;
+  animation: logo-k 300ms linear;
+  animation-delay:680ms;
+}
+.logo-e{
+  color: #34a853;
+  animation: logo-e 300ms linear;
+  animation-delay:970ms;
+  transform:rotate(-10deg);
+}
+@keyframes logo-m{
+  0%{
+    transform: translateY(0)
+  }
+  50%{
+    transform: translateY(35rpx)
+  }
+  100%{
+    transform: translateY(0)
+  }
+}
+@keyframes logo-o{
+  0%{
+    transform: translateY(0)
+  }
+  50%{
+    transform: translateY(-35rpx)
+  }
+  100%{
+    transform: translateY(0)
+  }
+}
+@keyframes logo-k{
+  0%{
+    transform: translateY(0)
+  }
+  50%{
+    transform: translateY(35rpx)
+  }
+  100%{
+    transform: translateY(0)
+  }
+}
+@keyframes logo-e{
+  0%{
+    transform: translateX(0) rotate(0)
+  }
+  50%{
+    transform: translateX(100rpx) rotate(360deg)
+  }
+  100%{
+    transform: translateX(0)
+  }
+}
+
+/*high  moke状态*/
+.high-m{
+  color: #4285f4;
+  animation: high-m 120000ms ease infinite;
+}
+.high-o{
+  color: #ea4335;
+  animation: high-o 120000ms ease infinite;
+}
+.high-k{
+  color: #fbbc05;
+  animation: high-k 120000ms ease infinite;
+}
+.high-e{
+  color: #34a853;
+  animation: high-e 120000ms ease infinite;
+}
+@keyframes high-m{
+  from {transform: rotate(0deg);}
+to {transform: rotate(108000deg);}
+}
+@keyframes high-o{
+  from {transform: rotate(0deg);}
+to {transform: rotate(108000deg);}
+}
+@keyframes high-k{
+  from {transform: rotate(0deg);}
+to {transform: rotate(108000deg);}
+}
+@keyframes high-e{
+  from {transform: rotate(0deg);}
+to {transform: rotate(108000deg);}
+}
+/* 进度条 */
+.sk-three-bounce {
+  margin: 20rpx auto;
+  width: 200rpx;
+  text-align: center;
+}
+
+.sk-three-bounce .sk-child {
+  width: 30rpx;
+  height: 30rpx;
+  background-color: #118fff;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+  animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+}
+
+.sk-three-bounce .sk-bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.sk-three-bounce .sk-bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+@-webkit-keyframes sk-three-bounce {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+
+
+@keyframes sk-three-bounce {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.loaddata{
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+.closeload{
+  display: none;
+}
+/* 进度条 */
+.error image{
+  width: 50%;
+  margin-top:25%;
+  margin-left: 25%;
+}
